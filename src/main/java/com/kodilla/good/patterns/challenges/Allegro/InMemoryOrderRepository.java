@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.Allegro;
 
 public class InMemoryOrderRepository implements OrderRepository {
     public void createOrder(User user, Product product) {

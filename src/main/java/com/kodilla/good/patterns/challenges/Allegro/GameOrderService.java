@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.Allegro;
 
 public class GameOrderService implements ProductOrderService {
     public boolean order(User user, Product product) {
