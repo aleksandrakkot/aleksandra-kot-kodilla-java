@@ -2,4 +2,5 @@ rootProject.name = 'aleksandra-kot-koddila-java'
 include 'kodilla-good-patterns'
 include 'kodilla-spring'
 include 'kodilla-spring-web'
+include 'kodilla-stream'
 
