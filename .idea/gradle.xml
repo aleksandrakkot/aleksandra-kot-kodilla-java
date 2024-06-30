@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/kodilla-good-patterns" />
+            <option value="$PROJECT_DIR$/kodilla-hibernate" />
             <option value="$PROJECT_DIR$/kodilla-jdbc" />
             <option value="$PROJECT_DIR$/kodilla-spring" />
             <option value="$PROJECT_DIR$/kodilla-spring-web" />
