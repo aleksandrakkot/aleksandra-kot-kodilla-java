@@ -8,6 +8,11 @@ import java.util.List;
 
 @Entity
 @Table(name = "COMPANIES")
+@NamedNativeQueries({
+        @NamedNativeQuery(name = "Company.findByNamePrefix",
+                query = "SELECT * FROM COMPANIES WHERE LEFT(COMPANY_NAME, 3) = ?1",
+                resultClass = Company.class)
+})
 public class Company {
 
     private int id;
