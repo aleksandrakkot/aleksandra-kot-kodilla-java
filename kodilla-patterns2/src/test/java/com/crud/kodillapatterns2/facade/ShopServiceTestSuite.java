@@ -1,5 +1,4 @@
 package com.crud.kodillapatterns2.facade;
-
 import com.crud.kodillapatterns2.facade.api.ItemDto;
 import com.crud.kodillapatterns2.facade.api.OrderDto;
 import com.crud.kodillapatterns2.facade.api.OrderFacade;
@@ -14,7 +13,6 @@ class ShopServiceTestSuite {
     private ShopService shopService;
     @Autowired
     private OrderFacade orderFacade;
-
     @Test
     void testShopServiceSubmitOrder() {
         long orderId = shopService.openOrder(1L);
@@ -58,7 +56,6 @@ class ShopServiceTestSuite {
             System.out.println("Access denied. User is not authenticated.");
         }
     }
-
     @Test
     public void testShopFacade() {
         OrderDto order = new OrderDto();
