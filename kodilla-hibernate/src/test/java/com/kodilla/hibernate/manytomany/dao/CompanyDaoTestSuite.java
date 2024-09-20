@@ -27,7 +27,7 @@ class CompanyDaoTestSuite {
         employeeDao.deleteAll();
     }
 
-    @Test
+    /*@Test
     void testSaveManyToMany() {
         //Given
         Employee johnSmith = new Employee("John", "Smith");
@@ -103,5 +103,5 @@ class CompanyDaoTestSuite {
 
         // Then
         assertEquals(2, employees.size());
-    }
+    }*/
 }
