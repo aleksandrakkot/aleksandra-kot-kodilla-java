@@ -4,15 +4,28 @@ import com.crud.kodillapatterns2.facade.api.OrderDto;
 import com.crud.kodillapatterns2.facade.api.OrderFacade;
 import com.crud.kodillapatterns2.facade.api.OrderProcessingException;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import java.math.BigDecimal;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 @SpringBootTest
 class ShopServiceTestSuite {
     @Autowired
     private ShopService shopService;
     @Autowired
     private OrderFacade orderFacade;
+
+    private static final Logger LOGGER =
+            LoggerFactory.getLogger(ShopServiceTestSuite.class);
+
     @Test
     void testShopServiceSubmitOrder() {
         long orderId = shopService.openOrder(1L);
@@ -69,4 +82,5 @@ class ShopServiceTestSuite {
             // business exception - should be handled in real application
         }
     }
+
 }

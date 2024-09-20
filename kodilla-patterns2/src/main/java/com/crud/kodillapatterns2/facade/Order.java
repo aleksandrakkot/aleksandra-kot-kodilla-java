@@ -34,4 +34,5 @@ public class Order {
     public void setVerified(boolean verified) { isVerified = verified; }
     public boolean isSubmitted() { return isSubmitted; }
     public void setSubmitted(boolean submitted) { isSubmitted = submitted; }
+
 }
